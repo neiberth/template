@@ -1,0 +1,39 @@
+body{
+  margin-top:60px;
+}
+
+header, main, nav, footer{
+  display: block;
+
+}
+
+#carroselCuston{
+
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+  /* max-width: 720px; */
+  margin-bottom: 30px;
+}
+
+#bloco{
+  width:auto;
+  height:400px;
+}
+
+#blocoCor{
+  background-color:rgb(255, 0, 106);
+}
+
+#blocoCor1{
+  background-color:rgb(140, 0, 255);
+}
+
+#blocoCor2{
+  background-color:rgb(51, 255, 0);
+}
+
+#listaCasa{
+  margin-bottom: 50px;
+}

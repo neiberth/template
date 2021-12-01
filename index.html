@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Bootstrap CSS 4.6.1-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="css/style.css">
+
+    <title>Avhoai</title>
+</head>
+
+<body cz-shortcut-listen="true">
+  <!-- Inicio da NAV -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Avhoai</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Corretor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Venda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Aluguel</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Imovel</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Venda</a>
+                            <a class="dropdown-item" href="#">Aluguel</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Busca</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+  <!-- Final da NAV  -->
+
+    <main class='container' role="main">
+      <!-- Inicio do Carrosel -->
+      <div id="carroselCuston">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div id="blocoCor">
+                <div id="bloco">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Primeiro slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="blocoCor">
+                <div id="bloco">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Segundo slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="blocoCor">
+                <div id="bloco">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Terceiro slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="blocoCor">
+                <div id="bloco">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Quarto slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- Final do Carrosel -->
+
+      <section class="widget widget-showcase">
+
+        <!-- Lista das casas -->
+        <div id="listaCasa">
+          <div class="showcase-template-08">
+            <div class='container'>
+              <div class='row'>
+                <ul class="nav nav-pills nav-fill">
+                  <li class="nav-item">
+                    <h2>Cassas </h2>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Destaques</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Mais Ofertas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="showcase-transition">
+              <div class='container'>
+                <div class='row'>
+                  <div class="col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            
+          </div>
+        </div>
+
+        <!-- Lista dos Apartamentos -->
+        <div class="showcase-template-08">
+          <div class='container'>
+            <div class='row'>
+              <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <h2>Cassas </h2>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Destaques</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Mais Ofertas</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="showcase-transition">
+            <div class='container'>
+              <div class='row'>
+                <div class="col-sm-12 col-md-4">
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          
+        </div>
+      </section>
+     
+      
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first 3.5.1, then Popper.js 1.16.1, then Bootstrap JS 4.6.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+</body>
+</html>
